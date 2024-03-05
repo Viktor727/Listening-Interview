@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-
 interface CheckboxProps {
     text: string;
     id: string;
@@ -8,10 +7,6 @@ interface CheckboxProps {
 }
  
 const Checkbox: React.FunctionComponent<CheckboxProps> = ({text, id, checked}) => {
-    // const handlerChange = (e) => {
-    //     console.log(e);
-    // }
-
     const [data, setData] = useState(checked);
 
     return (
